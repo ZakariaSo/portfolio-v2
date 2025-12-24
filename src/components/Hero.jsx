@@ -24,7 +24,7 @@ const Hero = () => {
           <BackgroundGradient className="w-70 h-70 lg:w-80 lg:h-80 rounded-full bg-zinc-900">
             <figure className="rounded-full overflow-hidden ">
               <img
-                src="/public/Images/33.jpg"
+                src="/images/33.jpg"
                 alt="my photo"
                 width={400}
                 height={400}
