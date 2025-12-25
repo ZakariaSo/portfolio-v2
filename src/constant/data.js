@@ -3,7 +3,6 @@ import {
     RiGithubFill,
     RiLinkedinFill,
   } from "@remixicon/react";
-import { link } from "framer-motion/client";
   
   export const navItems = [
     {
@@ -123,26 +122,26 @@ import { link } from "framer-motion/client";
     {
       id: 1,
       title: "Kitty Plan",
-      src: "/images/KittyPlan.png",
+      src: "/Images/KittyPlan.png",
       text: "The modern online fundraising platform that simplifies collecting money for all your events and projects.",
     },
     {
       id: 2,
       title: "Tarab Caftan",
-      src: "/images/TarabCaftan.png",
+      src: "/Images/TarabCaftan.png",
       link:"https://tarabcaftan.com/",
       text: "Discover the elegance of Moroccan tradition with our exquisite collection of caftans and traditional women's clothing.",
     },
     {
       id: 3,
       title: "Travel World",
-      src: "/images/Travel.jpeg",
+      src: "/Images/Travel.jpeg",
       text: "Discover your next adventure - Travel planning made simple and stress-free.",
     },
     {
       id: 4,
       title: "Books",
-      src: "/images/BookApp.jpeg",
+      src: "/Images/BookApp.jpeg",
       text: "Your online destination for books - Discover, explore, and order with ease.",
     },
   ];

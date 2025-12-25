@@ -12,8 +12,8 @@
   "dependencies": {
     "@remixicon/react": "^4.6.0",
     "clsx": "^2.1.1",
-    "framer-motion": "^12.23.22",
-    "motion": "^12.23.22",
+    "framer-motion": "^12.23.26",
+    "motion": "^12.23.26",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "tailwind-merge": "^3.3.1"

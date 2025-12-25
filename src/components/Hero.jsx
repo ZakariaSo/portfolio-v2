@@ -3,13 +3,15 @@ import { heroIcons } from "../constant/data";
 import { BackgroundGradient } from "./ui/BackgroundGradient";
 import Button from "./Button";
 
-import { motion } from "framer-motion";
+import { motion as Motion } from "framer-motion"; 
+
+
 import { fadeIn, fadeInUp, staggerContainer } from "../motion/animation";
 
 const Hero = () => {
   return (
     <section className="py-28 lg:pt-40" id="home">
-      <motion.div
+      <Motion.div
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
@@ -17,7 +19,7 @@ const Hero = () => {
         className="container mt-20 flex flex-col items-center"
       >
         {/* my photo */}
-        <motion.div
+        <Motion.div
           variants={fadeIn}
           // className="relative w-70 h-70 lg:w-80 lg:h-80 rounded-full bg-zinc-900"
         >
@@ -31,18 +33,18 @@ const Hero = () => {
               />
             </figure>
           </BackgroundGradient>
-        </motion.div>
+        </Motion.div>
 
         {/* my hero content */}
         <div className="text-center mt-8">
-          <motion.h1
+          <Motion.h1
             variants={fadeInUp}
             className="text-3xl lg:text-5xl mb-1.5 font-bold"
           >
             Hi, I'm Zakaria Sobahi.
-          </motion.h1>
-          <motion.h2 variants={fadeInUp}>Full Stack Developer</motion.h2>
-          <motion.p
+          </Motion.h1>
+          <Motion.h2 variants={fadeInUp}>Full Stack Developer</Motion.h2>
+          <Motion.p
             variants={fadeInUp}
             className="max-w-[820px] mx-auto mt-4 mb-6"
           >
@@ -55,10 +57,10 @@ const Hero = () => {
             systems, I transform complex business requirements into scalable,
             user-centric web and mobile solutions that drive meaningful
             engagement.
-          </motion.p>
+          </Motion.p>
         </div>
 
-        <motion.div variants={fadeIn} className="flex items-center gap-6 mb-8">
+        <Motion.div variants={fadeIn} className="flex items-center gap-6 mb-8">
           {heroIcons.map((icon) => {
             const IconComponent = icon.icon;
             return (
@@ -73,10 +75,10 @@ const Hero = () => {
               </a>
             );
           })}
-        </motion.div>
+        </Motion.div>
 
         {/* button */}
-        <motion.div
+        <Motion.div
   variants={fadeInUp}
   className="mt-10 flex-wrap gap-6 items-center justify-center flex"
 >
@@ -89,8 +91,8 @@ const Hero = () => {
   >
     <Button label="Let's Collaborate" classes="secondary-btn" />
   </a>
-</motion.div>
-      </motion.div>
+</Motion.div>
+      </Motion.div>
     </section>
   );
 };
